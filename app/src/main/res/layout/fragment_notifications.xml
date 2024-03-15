@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quality Hardware"
+            android:fontFamily="@font/century_gothic"
+            android:textSize="@dimen/margin_25"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_20"
+            android:padding="@dimen/margin_8"
+            android:textStyle="bold"
+            android:textColor="@color/purple_200"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service options :"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/century_gothic"
+                android:textSize="@dimen/fontsize_15"
+                android:padding="5dp"/>
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In-store shopping · Delivery"
+                android:fontFamily="@font/century_gothic"
+                android:textSize="@dimen/fontsize_15"
+                android:padding="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number :"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+
+                android:fontFamily="@font/century_gothic"
+                android:textSize="@dimen/fontsize_15"
+                android:padding="5dp"/>
+            <TextView
+                android:id="@+id/tv_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="94200 00600"
+                android:fontFamily="@font/century_gothic"
+                android:textSize="@dimen/fontsize_15"
+                android:padding="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/century_gothic"
+                android:padding="5dp"
+                android:text="Address :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fontsize_15"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_purchase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13-17, Guru Ashish, Opposite Telephone Exchange, Opp. Telephone Exchange, Canada Corner, Nashik, Maharashtra 422002"
+                android:fontFamily="@font/century_gothic"
+                android:textSize="@dimen/fontsize_15"
+                android:padding="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email :"
+                android:fontFamily="@font/century_gothic"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/fontsize_15"
+                android:padding="5dp"/>
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="quality.hardware@gmail.com"
+                android:fontFamily="@font/century_gothic"
+                android:textSize="@dimen/fontsize_15"
+                android:padding="5dp"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/btnCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Call Now"
+            android:background="@color/purple_200"
+            android:layout_weight="1"
+            android:fontFamily="@font/century_gothic"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/fontsize_15"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/btnAddress"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@color/purple_200"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="View Location"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="1dp"
+            android:fontFamily="@font/century_gothic"
+            android:textSize="@dimen/fontsize_15"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

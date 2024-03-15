@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Add Product Details"
+            android:fontFamily="@font/century_gothic"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@color/purple_200"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#F1EAEA"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="Enter Product Name"
+            android:fontFamily="@font/century_gothic"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/edtModel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#F1EAEA"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="Enter Model Number"
+            android:fontFamily="@font/century_gothic"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:padding="10dp"/>
+        <EditText
+                android:id="@+id/edtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#F1EAEA"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="Enter Price"
+            android:fontFamily="@font/century_gothic"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/edtPurchaseDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#F1EAEA"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="Enter Purchase Date"
+            android:fontFamily="@font/century_gothic"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:padding="10dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location Details"
+            android:fontFamily="@font/century_gothic"
+            android:textStyle="bold"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#F1EEEE">
+            <Spinner
+                android:id="@+id/spinner_wall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/wall_array"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#F1EEEE">
+            <Spinner
+                android:id="@+id/spinner_rack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/Rack_array"/>
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/edtSection"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#F1EAEA"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:hint="Enter Section Number"
+            android:fontFamily="@font/century_gothic"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/edtBox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#F1EAEA"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:hint="Enter Box Number"
+            android:fontFamily="@font/century_gothic"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:padding="10dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentBottom="true"
+        android:text="Submit Detils"
+        android:fontFamily="@font/century_gothic"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="@color/purple_200"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ProductLocationFinder</string>
+    <string name="title_home">Find Product</string>
+    <string name="title_dashboard">Add Product</string>
+    <string name="title_notifications">About Shop</string>
+
+    <string-array name="wall_array">
+        <item>Select Wall</item>
+        <item>Wall 1</item>
+        <item>Wall 2</item>
+        <item>Wall 3</item>
+        <item>Wall 4</item>
+    </string-array>
+
+    <string-array name="Rack_array">
+        <item>Select Rack</item>
+        <item>Rack 1</item>
+        <item>Rack 2</item>
+
+    </string-array>
+
+
+</resources>

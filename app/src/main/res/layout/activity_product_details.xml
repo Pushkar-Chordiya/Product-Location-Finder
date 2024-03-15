@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sample Product"
+            android:fontFamily="@font/century_gothic"
+            android:textSize="@dimen/margin_25"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_20"
+            android:padding="@dimen/margin_8"
+            android:textStyle="bold"
+            android:textColor="@color/purple_200"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price :"
+                android:textColor="@color/design_default_color_surface"
+                android:textStyle="bold"
+                android:fontFamily="@font/century_gothic"
+                android:textSize="@dimen/fontsize_15"
+                android:padding="5dp"/>
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:text="Price :"
+                android:fontFamily="@font/century_gothic"
+                android:textSize="@dimen/fontsize_15"
+                android:padding="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model Number :"
+                android:textColor="@color/design_default_color_secondary"
+                android:textStyle="bold"
+
+                android:fontFamily="@font/century_gothic"
+                android:textSize="@dimen/fontsize_15"
+                android:padding="5dp"/>
+            <TextView
+                android:id="@+id/tv_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price :"
+                android:fontFamily="@font/century_gothic"
+                android:textSize="@dimen/fontsize_15"
+                android:padding="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/century_gothic"
+                android:padding="5dp"
+                android:text="Purchase Date :"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="@dimen/fontsize_15"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_purchase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price :"
+                android:fontFamily="@font/century_gothic"
+                android:textSize="@dimen/fontsize_15"
+                android:padding="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location :"
+                android:fontFamily="@font/century_gothic"
+                android:textColor="@color/design_default_color_primary"
+                android:textStyle="bold"
+                android:textSize="@dimen/fontsize_15"
+                android:padding="5dp"/>
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price :"
+                android:fontFamily="@font/century_gothic"
+                android:textSize="@dimen/fontsize_15"
+                android:padding="5dp"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
